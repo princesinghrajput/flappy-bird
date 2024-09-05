@@ -1,3 +1,9 @@
+*{
+  -webkit-user-select: none;  /* Disable selection for Safari */
+  -moz-user-select: none;     /* Disable selection for Firefox */
+  -ms-user-select: none;      /* Disable selection for older IE versions */
+  user-select: none;          /* Disable selection for modern browsers */
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -30,6 +36,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 h1 {
@@ -43,6 +50,8 @@ h1 {
   height: 512px;
   background-image: url('./assets/background-night.png');
   overflow: hidden;
+  border: 0px solid;
+  border-radius: 10px;
 
 
 }
